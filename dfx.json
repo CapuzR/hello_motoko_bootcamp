@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "hello_motoko_bootcamp": {
+      "main": "src/hello_motoko_bootcamp/main.mo",
+      "type": "motoko"
+    },
+    "hello_motoko_bootcamp_assets": {
+      "dependencies": [
+        "hello_motoko_bootcamp"
+      ],
+      "frontend": {
+        "entrypoint": "src/hello_motoko_bootcamp_assets/src/index.html"
+      },
+      "source": [
+        "src/hello_motoko_bootcamp_assets/assets",
+        "dist/hello_motoko_bootcamp_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
